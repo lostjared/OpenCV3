@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F5831FA1E27F5C900101A98 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F5831F91E27F5C900101A98 /* AppDelegate.mm */; };
+		7F5831FD1E27F5C900101A98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5831FC1E27F5C900101A98 /* main.m */; };
+		7F5831FF1E27F5C900101A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5831FE1E27F5C900101A98 /* Assets.xcassets */; };
+		7F5832021E27F5C900101A98 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5832001E27F5C900101A98 /* MainMenu.xib */; };
+		7F58320D1E27F5C900101A98 /* OpenCV3_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F58320C1E27F5C900101A98 /* OpenCV3_ProjectTests.m */; };
+		7F5832181E27F5C900101A98 /* OpenCV3_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5832171E27F5C900101A98 /* OpenCV3_ProjectUITests.m */; };
+		7F5832291E27F66400101A98 /* cvlibs in Resources */ = {isa = PBXBuildFile; fileRef = 7F5832281E27F66400101A98 /* cvlibs */; };
+		7F58322C1E27F6B400101A98 /* CVTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F58322A1E27F6B400101A98 /* CVTest.mm */; };
+		7F58322E1E27F98400101A98 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58322D1E27F98400101A98 /* OpenCL.framework */; };
+		7F58323E1E27FAA700101A98 /* libclapack.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58323D1E27FAA700101A98 /* libclapack.tbd */; };
+		7F5832411E27FB0100101A98 /* libf77lapack.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58323F1E27FB0100101A98 /* libf77lapack.tbd */; };
+		7F5832421E27FB0100101A98 /* liblapack.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832401E27FB0100101A98 /* liblapack.tbd */; };
+		7F5832441E27FB6800101A98 /* libcblas.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832431E27FB6800101A98 /* libcblas.tbd */; };
+		7F5832461E27FD0900101A98 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F5832451E27FD0900101A98 /* AppController.mm */; };
+		7F9306991E28014F00D3C392 /* libIlmImf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58322F1E27FA7E00101A98 /* libIlmImf.a */; };
+		7F93069A1E28014F00D3C392 /* libippicv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832301E27FA7E00101A98 /* libippicv.a */; };
+		7F93069B1E28014F00D3C392 /* liblibjasper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832311E27FA7E00101A98 /* liblibjasper.a */; };
+		7F93069C1E28014F00D3C392 /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832321E27FA7E00101A98 /* liblibjpeg.a */; };
+		7F93069D1E28014F00D3C392 /* liblibpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832331E27FA7E00101A98 /* liblibpng.a */; };
+		7F93069E1E28014F00D3C392 /* liblibtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832341E27FA7E00101A98 /* liblibtiff.a */; };
+		7F93069F1E28014F00D3C392 /* libopencv_world.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832261E27F65900101A98 /* libopencv_world.a */; };
+		7F9306A11E28014F00D3C392 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5832351E27FA7E00101A98 /* libzlib.a */; };
+		7F9306A21E28021400D3C392 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58324B1E2800D800101A98 /* libwebp.a */; };
+		7F9306A61E28021400D3C392 /* libwebpdecoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306A31E28021400D3C392 /* libwebpdecoder.a */; };
+		7F9306A71E28021400D3C392 /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306A41E28021400D3C392 /* libwebpdemux.a */; };
+		7F9306A81E28021400D3C392 /* libwebpmux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306A51E28021400D3C392 /* libwebpmux.a */; };
+		7F9306AB1E2802BF00D3C392 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306A91E2802BF00D3C392 /* AVFoundation.framework */; };
+		7F9306AC1E2802BF00D3C392 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306AA1E2802BF00D3C392 /* AVKit.framework */; };
+		7F9306AF1E2802ED00D3C392 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306AD1E2802ED00D3C392 /* VideoDecodeAcceleration.framework */; };
+		7F9306B01E2802ED00D3C392 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306AE1E2802ED00D3C392 /* VideoToolbox.framework */; };
+		7F9306B21E28032400D3C392 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B11E28032400D3C392 /* CoreMedia.framework */; };
+		7F9306B41E28032D00D3C392 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B31E28032D00D3C392 /* CoreVideo.framework */; };
+		7F9306BA1E28037300D3C392 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B51E28037300D3C392 /* libavcodec.a */; };
+		7F9306BB1E28037300D3C392 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B61E28037300D3C392 /* libavdevice.a */; };
+		7F9306BC1E28037300D3C392 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B71E28037300D3C392 /* libavfilter.a */; };
+		7F9306BD1E28037300D3C392 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B81E28037300D3C392 /* libavformat.a */; };
+		7F9306BE1E28037300D3C392 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306B91E28037300D3C392 /* libavutil.a */; };
+		7F9306C01E28038D00D3C392 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306BF1E28038D00D3C392 /* libbz2.tbd */; };
+		7F9306C21E28090D00D3C392 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9306C11E28090D00D3C392 /* libswscale.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F5832091E27F5C900101A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F5831ED1E27F5C800101A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5831F41E27F5C900101A98;
+			remoteInfo = OpenCV3_Project;
+		};
+		7F5832141E27F5C900101A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F5831ED1E27F5C800101A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F5831F41E27F5C900101A98;
+			remoteInfo = OpenCV3_Project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F5831F51E27F5C900101A98 /* OpenCV3_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV3_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5831F81E27F5C900101A98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F5831F91E27F5C900101A98 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		7F5831FC1E27F5C900101A98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F5831FE1E27F5C900101A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F5832011E27F5C900101A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7F5832031E27F5C900101A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5832081E27F5C900101A98 /* OpenCV3_ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCV3_ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F58320C1E27F5C900101A98 /* OpenCV3_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCV3_ProjectTests.m; sourceTree = "<group>"; };
+		7F58320E1E27F5C900101A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5832131E27F5C900101A98 /* OpenCV3_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCV3_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5832171E27F5C900101A98 /* OpenCV3_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCV3_ProjectUITests.m; sourceTree = "<group>"; };
+		7F5832191E27F5C900101A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5832261E27F65900101A98 /* libopencv_world.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_world.a; path = cvlibs/libopencv_world.a; sourceTree = "<group>"; };
+		7F5832281E27F66400101A98 /* cvlibs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cvlibs; sourceTree = "<group>"; };
+		7F58322A1E27F6B400101A98 /* CVTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVTest.mm; sourceTree = "<group>"; };
+		7F58322B1E27F6B400101A98 /* CVTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTest.h; sourceTree = "<group>"; };
+		7F58322D1E27F98400101A98 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		7F58322F1E27FA7E00101A98 /* libIlmImf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIlmImf.a; path = cvlibs/libIlmImf.a; sourceTree = "<group>"; };
+		7F5832301E27FA7E00101A98 /* libippicv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libippicv.a; path = cvlibs/libippicv.a; sourceTree = "<group>"; };
+		7F5832311E27FA7E00101A98 /* liblibjasper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibjasper.a; path = cvlibs/liblibjasper.a; sourceTree = "<group>"; };
+		7F5832321E27FA7E00101A98 /* liblibjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibjpeg.a; path = cvlibs/liblibjpeg.a; sourceTree = "<group>"; };
+		7F5832331E27FA7E00101A98 /* liblibpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibpng.a; path = cvlibs/liblibpng.a; sourceTree = "<group>"; };
+		7F5832341E27FA7E00101A98 /* liblibtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibtiff.a; path = cvlibs/liblibtiff.a; sourceTree = "<group>"; };
+		7F5832351E27FA7E00101A98 /* libzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzlib.a; path = cvlibs/libzlib.a; sourceTree = "<group>"; };
+		7F58323D1E27FAA700101A98 /* libclapack.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libclapack.tbd; path = usr/lib/libclapack.tbd; sourceTree = SDKROOT; };
+		7F58323F1E27FB0100101A98 /* libf77lapack.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libf77lapack.tbd; path = usr/lib/libf77lapack.tbd; sourceTree = SDKROOT; };
+		7F5832401E27FB0100101A98 /* liblapack.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblapack.tbd; path = usr/lib/liblapack.tbd; sourceTree = SDKROOT; };
+		7F5832431E27FB6800101A98 /* libcblas.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcblas.tbd; path = usr/lib/libcblas.tbd; sourceTree = SDKROOT; };
+		7F5832451E27FD0900101A98 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		7F5832471E27FD2300101A98 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		7F58324B1E2800D800101A98 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebp.a; path = cvlibs/libwebp.a; sourceTree = "<group>"; };
+		7F9306A31E28021400D3C392 /* libwebpdecoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebpdecoder.a; path = cvlibs/libwebpdecoder.a; sourceTree = "<group>"; };
+		7F9306A41E28021400D3C392 /* libwebpdemux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebpdemux.a; path = cvlibs/libwebpdemux.a; sourceTree = "<group>"; };
+		7F9306A51E28021400D3C392 /* libwebpmux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebpmux.a; path = cvlibs/libwebpmux.a; sourceTree = "<group>"; };
+		7F9306A91E2802BF00D3C392 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7F9306AA1E2802BF00D3C392 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		7F9306AD1E2802ED00D3C392 /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		7F9306AE1E2802ED00D3C392 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		7F9306B11E28032400D3C392 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7F9306B31E28032D00D3C392 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7F9306B51E28037300D3C392 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = cvlibs/libavcodec.a; sourceTree = "<group>"; };
+		7F9306B61E28037300D3C392 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = cvlibs/libavdevice.a; sourceTree = "<group>"; };
+		7F9306B71E28037300D3C392 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = cvlibs/libavfilter.a; sourceTree = "<group>"; };
+		7F9306B81E28037300D3C392 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = cvlibs/libavformat.a; sourceTree = "<group>"; };
+		7F9306B91E28037300D3C392 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = cvlibs/libavutil.a; sourceTree = "<group>"; };
+		7F9306BF1E28038D00D3C392 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		7F9306C11E28090D00D3C392 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = cvlibs/libswscale.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F5831F21E27F5C900101A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9306C21E28090D00D3C392 /* libswscale.a in Frameworks */,
+				7F9306C01E28038D00D3C392 /* libbz2.tbd in Frameworks */,
+				7F9306BA1E28037300D3C392 /* libavcodec.a in Frameworks */,
+				7F9306BB1E28037300D3C392 /* libavdevice.a in Frameworks */,
+				7F9306BC1E28037300D3C392 /* libavfilter.a in Frameworks */,
+				7F9306BD1E28037300D3C392 /* libavformat.a in Frameworks */,
+				7F9306BE1E28037300D3C392 /* libavutil.a in Frameworks */,
+				7F9306B41E28032D00D3C392 /* CoreVideo.framework in Frameworks */,
+				7F9306B21E28032400D3C392 /* CoreMedia.framework in Frameworks */,
+				7F9306AF1E2802ED00D3C392 /* VideoDecodeAcceleration.framework in Frameworks */,
+				7F9306B01E2802ED00D3C392 /* VideoToolbox.framework in Frameworks */,
+				7F9306AB1E2802BF00D3C392 /* AVFoundation.framework in Frameworks */,
+				7F9306AC1E2802BF00D3C392 /* AVKit.framework in Frameworks */,
+				7F9306A61E28021400D3C392 /* libwebpdecoder.a in Frameworks */,
+				7F9306A71E28021400D3C392 /* libwebpdemux.a in Frameworks */,
+				7F9306A81E28021400D3C392 /* libwebpmux.a in Frameworks */,
+				7F9306A21E28021400D3C392 /* libwebp.a in Frameworks */,
+				7F9306991E28014F00D3C392 /* libIlmImf.a in Frameworks */,
+				7F93069A1E28014F00D3C392 /* libippicv.a in Frameworks */,
+				7F93069B1E28014F00D3C392 /* liblibjasper.a in Frameworks */,
+				7F93069C1E28014F00D3C392 /* liblibjpeg.a in Frameworks */,
+				7F93069D1E28014F00D3C392 /* liblibpng.a in Frameworks */,
+				7F93069E1E28014F00D3C392 /* liblibtiff.a in Frameworks */,
+				7F93069F1E28014F00D3C392 /* libopencv_world.a in Frameworks */,
+				7F9306A11E28014F00D3C392 /* libzlib.a in Frameworks */,
+				7F5832441E27FB6800101A98 /* libcblas.tbd in Frameworks */,
+				7F5832411E27FB0100101A98 /* libf77lapack.tbd in Frameworks */,
+				7F5832421E27FB0100101A98 /* liblapack.tbd in Frameworks */,
+				7F58323E1E27FAA700101A98 /* libclapack.tbd in Frameworks */,
+				7F58322E1E27F98400101A98 /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5832051E27F5C900101A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5832101E27F5C900101A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F5831EC1E27F5C800101A98 = {
+			isa = PBXGroup;
+			children = (
+				7F5832281E27F66400101A98 /* cvlibs */,
+				7F5831F71E27F5C900101A98 /* OpenCV3_Project */,
+				7F58320B1E27F5C900101A98 /* OpenCV3_ProjectTests */,
+				7F5832161E27F5C900101A98 /* OpenCV3_ProjectUITests */,
+				7F5831F61E27F5C900101A98 /* Products */,
+				7F5832251E27F65800101A98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F5831F61E27F5C900101A98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F5831F51E27F5C900101A98 /* OpenCV3_Project.app */,
+				7F5832081E27F5C900101A98 /* OpenCV3_ProjectTests.xctest */,
+				7F5832131E27F5C900101A98 /* OpenCV3_ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F5831F71E27F5C900101A98 /* OpenCV3_Project */ = {
+			isa = PBXGroup;
+			children = (
+				7F5831F81E27F5C900101A98 /* AppDelegate.h */,
+				7F5832451E27FD0900101A98 /* AppController.mm */,
+				7F5832471E27FD2300101A98 /* AppController.h */,
+				7F58322A1E27F6B400101A98 /* CVTest.mm */,
+				7F58322B1E27F6B400101A98 /* CVTest.h */,
+				7F5831F91E27F5C900101A98 /* AppDelegate.mm */,
+				7F5831FE1E27F5C900101A98 /* Assets.xcassets */,
+				7F5832001E27F5C900101A98 /* MainMenu.xib */,
+				7F5832031E27F5C900101A98 /* Info.plist */,
+				7F5831FB1E27F5C900101A98 /* Supporting Files */,
+			);
+			path = OpenCV3_Project;
+			sourceTree = "<group>";
+		};
+		7F5831FB1E27F5C900101A98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F5831FC1E27F5C900101A98 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F58320B1E27F5C900101A98 /* OpenCV3_ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F58320C1E27F5C900101A98 /* OpenCV3_ProjectTests.m */,
+				7F58320E1E27F5C900101A98 /* Info.plist */,
+			);
+			path = OpenCV3_ProjectTests;
+			sourceTree = "<group>";
+		};
+		7F5832161E27F5C900101A98 /* OpenCV3_ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F5832171E27F5C900101A98 /* OpenCV3_ProjectUITests.m */,
+				7F5832191E27F5C900101A98 /* Info.plist */,
+			);
+			path = OpenCV3_ProjectUITests;
+			sourceTree = "<group>";
+		};
+		7F5832251E27F65800101A98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F9306C11E28090D00D3C392 /* libswscale.a */,
+				7F9306BF1E28038D00D3C392 /* libbz2.tbd */,
+				7F9306B51E28037300D3C392 /* libavcodec.a */,
+				7F9306B61E28037300D3C392 /* libavdevice.a */,
+				7F9306B71E28037300D3C392 /* libavfilter.a */,
+				7F9306B81E28037300D3C392 /* libavformat.a */,
+				7F9306B91E28037300D3C392 /* libavutil.a */,
+				7F9306B31E28032D00D3C392 /* CoreVideo.framework */,
+				7F9306B11E28032400D3C392 /* CoreMedia.framework */,
+				7F9306AD1E2802ED00D3C392 /* VideoDecodeAcceleration.framework */,
+				7F9306AE1E2802ED00D3C392 /* VideoToolbox.framework */,
+				7F9306A91E2802BF00D3C392 /* AVFoundation.framework */,
+				7F9306AA1E2802BF00D3C392 /* AVKit.framework */,
+				7F9306A31E28021400D3C392 /* libwebpdecoder.a */,
+				7F9306A41E28021400D3C392 /* libwebpdemux.a */,
+				7F9306A51E28021400D3C392 /* libwebpmux.a */,
+				7F58324B1E2800D800101A98 /* libwebp.a */,
+				7F5832431E27FB6800101A98 /* libcblas.tbd */,
+				7F58323F1E27FB0100101A98 /* libf77lapack.tbd */,
+				7F5832401E27FB0100101A98 /* liblapack.tbd */,
+				7F58323D1E27FAA700101A98 /* libclapack.tbd */,
+				7F58322F1E27FA7E00101A98 /* libIlmImf.a */,
+				7F5832301E27FA7E00101A98 /* libippicv.a */,
+				7F5832311E27FA7E00101A98 /* liblibjasper.a */,
+				7F5832321E27FA7E00101A98 /* liblibjpeg.a */,
+				7F5832331E27FA7E00101A98 /* liblibpng.a */,
+				7F5832341E27FA7E00101A98 /* liblibtiff.a */,
+				7F5832351E27FA7E00101A98 /* libzlib.a */,
+				7F58322D1E27F98400101A98 /* OpenCL.framework */,
+				7F5832261E27F65900101A98 /* libopencv_world.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F5831F41E27F5C900101A98 /* OpenCV3_Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F58321C1E27F5C900101A98 /* Build configuration list for PBXNativeTarget "OpenCV3_Project" */;
+			buildPhases = (
+				7F5831F11E27F5C900101A98 /* Sources */,
+				7F5831F21E27F5C900101A98 /* Frameworks */,
+				7F5831F31E27F5C900101A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCV3_Project;
+			productName = OpenCV3_Project;
+			productReference = 7F5831F51E27F5C900101A98 /* OpenCV3_Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F5832071E27F5C900101A98 /* OpenCV3_ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F58321F1E27F5C900101A98 /* Build configuration list for PBXNativeTarget "OpenCV3_ProjectTests" */;
+			buildPhases = (
+				7F5832041E27F5C900101A98 /* Sources */,
+				7F5832051E27F5C900101A98 /* Frameworks */,
+				7F5832061E27F5C900101A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F58320A1E27F5C900101A98 /* PBXTargetDependency */,
+			);
+			name = OpenCV3_ProjectTests;
+			productName = OpenCV3_ProjectTests;
+			productReference = 7F5832081E27F5C900101A98 /* OpenCV3_ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F5832121E27F5C900101A98 /* OpenCV3_ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5832221E27F5C900101A98 /* Build configuration list for PBXNativeTarget "OpenCV3_ProjectUITests" */;
+			buildPhases = (
+				7F58320F1E27F5C900101A98 /* Sources */,
+				7F5832101E27F5C900101A98 /* Frameworks */,
+				7F5832111E27F5C900101A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F5832151E27F5C900101A98 /* PBXTargetDependency */,
+			);
+			name = OpenCV3_ProjectUITests;
+			productName = OpenCV3_ProjectUITests;
+			productReference = 7F5832131E27F5C900101A98 /* OpenCV3_ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F5831ED1E27F5C800101A98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jared Bruni";
+				TargetAttributes = {
+					7F5831F41E27F5C900101A98 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					7F5832071E27F5C900101A98 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7F5831F41E27F5C900101A98;
+					};
+					7F5832121E27F5C900101A98 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7F5831F41E27F5C900101A98;
+					};
+				};
+			};
+			buildConfigurationList = 7F5831F01E27F5C800101A98 /* Build configuration list for PBXProject "OpenCV3_Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F5831EC1E27F5C800101A98;
+			productRefGroup = 7F5831F61E27F5C900101A98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F5831F41E27F5C900101A98 /* OpenCV3_Project */,
+				7F5832071E27F5C900101A98 /* OpenCV3_ProjectTests */,
+				7F5832121E27F5C900101A98 /* OpenCV3_ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F5831F31E27F5C900101A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5832291E27F66400101A98 /* cvlibs in Resources */,
+				7F5831FF1E27F5C900101A98 /* Assets.xcassets in Resources */,
+				7F5832021E27F5C900101A98 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5832061E27F5C900101A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5832111E27F5C900101A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F5831F11E27F5C900101A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F58322C1E27F6B400101A98 /* CVTest.mm in Sources */,
+				7F5831FD1E27F5C900101A98 /* main.m in Sources */,
+				7F5831FA1E27F5C900101A98 /* AppDelegate.mm in Sources */,
+				7F5832461E27FD0900101A98 /* AppController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F5832041E27F5C900101A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F58320D1E27F5C900101A98 /* OpenCV3_ProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F58320F1E27F5C900101A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5832181E27F5C900101A98 /* OpenCV3_ProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F58320A1E27F5C900101A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5831F41E27F5C900101A98 /* OpenCV3_Project */;
+			targetProxy = 7F5832091E27F5C900101A98 /* PBXContainerItemProxy */;
+		};
+		7F5832151E27F5C900101A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F5831F41E27F5C900101A98 /* OpenCV3_Project */;
+			targetProxy = 7F5832141E27F5C900101A98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F5832001E27F5C900101A98 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F5832011E27F5C900101A98 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F58321A1E27F5C900101A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7F58321B1E27F5C900101A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7F58321D1E27F5C900101A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = ./include;
+				INFOPLIST_FILE = OpenCV3_Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cvlibs",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "LostSideDead.OpenCV3-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F58321E1E27F5C900101A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = ./include;
+				INFOPLIST_FILE = OpenCV3_Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cvlibs",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "LostSideDead.OpenCV3-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F5832201E27F5C900101A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenCV3_ProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LostSideDead.OpenCV3-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCV3_Project.app/Contents/MacOS/OpenCV3_Project";
+			};
+			name = Debug;
+		};
+		7F5832211E27F5C900101A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenCV3_ProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LostSideDead.OpenCV3-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCV3_Project.app/Contents/MacOS/OpenCV3_Project";
+			};
+			name = Release;
+		};
+		7F5832231E27F5C900101A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenCV3_ProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LostSideDead.OpenCV3-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenCV3_Project;
+			};
+			name = Debug;
+		};
+		7F5832241E27F5C900101A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenCV3_ProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LostSideDead.OpenCV3-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenCV3_Project;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F5831F01E27F5C800101A98 /* Build configuration list for PBXProject "OpenCV3_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F58321A1E27F5C900101A98 /* Debug */,
+				7F58321B1E27F5C900101A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F58321C1E27F5C900101A98 /* Build configuration list for PBXNativeTarget "OpenCV3_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F58321D1E27F5C900101A98 /* Debug */,
+				7F58321E1E27F5C900101A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F58321F1E27F5C900101A98 /* Build configuration list for PBXNativeTarget "OpenCV3_ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5832201E27F5C900101A98 /* Debug */,
+				7F5832211E27F5C900101A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5832221E27F5C900101A98 /* Build configuration list for PBXNativeTarget "OpenCV3_ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5832231E27F5C900101A98 /* Debug */,
+				7F5832241E27F5C900101A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F5831ED1E27F5C800101A98 /* Project object */;
+}
