@@ -67,7 +67,7 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
                 cf[2] = 0;
             } else {
                 cf[2] = sin(i*red_color/100)*255;
-                cf[1] = sin(i*green_color/100)*200-color_g;
+                cf[1] = sin(i*green_color/100)*255;
                 cf[0] = sin(i*blue_color/100)*255;
             }
         }
