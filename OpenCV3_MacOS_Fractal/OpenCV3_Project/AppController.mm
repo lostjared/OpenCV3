@@ -27,6 +27,6 @@ using namespace frac;
     max_iter = atoi([[iter stringValue] UTF8String]);
     frac::DrawFractal(img);
     cv::imshow("image", img);
-    }
+}
 
 @end

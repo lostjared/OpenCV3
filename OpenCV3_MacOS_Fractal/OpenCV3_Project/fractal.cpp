@@ -44,27 +44,26 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
     float x2=mod_x+1.0f*zoom;
     float y1=mod_y-1.0f*zoom;
     float y2=mod_y+1.0f*zoom;
-    int Width=frame.cols, Height=frame.rows;
+    int width=frame.cols, height=frame.rows;
     std::complex<double> C ((double)paramA, (double)+paramB);
     std::complex<double> Z;
     int i = 0;
-    bool Finished;
-    for (int x=0; x<Width;++x)
+    bool finished;
+    for (int x=0; x < width;++x)
     {
-        for (int y=0; y<Height; ++y)
+        for (int y=0; y < height; ++y)
         {
-            Z=std::complex<double>((double)(x*(x2-x1)/Width+x1), (double)(y*(y2-y1)/Height+y1));
-            Finished=false;
+            Z=std::complex<double>((double)(x*(x2-x1)/width+x1), (double)(y*(y2-y1)/height+y1));
+            finished=false;
             //C=std::complex<double>(x,y);
-            for (i=0; i<max_iter && !Finished; i++)
+            for (i=0; i<max_iter && !finished; i++)
             {
                 Z=Z*Z+C;
                 //Zt=Z-Z0;
-                if(std::abs(Z) > 4) Finished = true;
+                if(std::abs(Z) > 4) finished = true;
             }
-            
             cv::Vec3b &cf = frame.at<cv::Vec3b>(y, x);
-            if(Finished) {
+            if(finished) {
                 cf[0] = sin(i*red_color/100)*255-color_r;
                 cf[1] = sin(i*green_color/100)*200-color_g;
                 cf[2] = (255-i*2-color_base);
