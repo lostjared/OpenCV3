@@ -21,8 +21,14 @@ using namespace frac;
 
 - (IBAction) openImage: (id) sender {
     cv::Mat img(480,640, CV_8UC3);
-    paramA = -([slide1 integerValue] * 0.01);
+    paramA = [slide1 integerValue] * 0.01;
     paramB = [slide2 integerValue] * 0.01;
+    if([chk1 state] == NSOnState)
+        paramA = -paramA;
+
+    if([chk2 state] == NSOnState)
+        paramB = -paramB;
+    
     
     [field_cnt setFloatValue: paramA];
     [iter_nt setFloatValue: paramB];

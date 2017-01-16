@@ -18,6 +18,7 @@
     IBOutlet NSSlider *slide1, *slide2, *slide3;
     IBOutlet NSTextField *field, *iter, *field_cnt, *iter_nt;
     IBOutlet NSWindow *window;
+    IBOutlet NSButton *chk1, *chk2;
     
 }
 
