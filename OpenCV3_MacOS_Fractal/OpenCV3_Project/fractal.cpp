@@ -11,6 +11,7 @@ namespace frac {
     float zoom = 0.5;
     double red_color = 3.3;
     double green_color = 3.3;
+    double blue_color = 2.4;
     float mod_x = 0.5;
     float mod_y = 0.5;
     double color_r = 0;
@@ -65,9 +66,9 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
                 cf[1] = 0;
                 cf[2] = 0;
             } else {
-                cf[0] = sin(i*red_color/100)*255;
+                cf[2] = sin(i*red_color/100)*255;
                 cf[1] = sin(i*green_color/100)*200-color_g;
-                cf[2] = (255-i*2-color_base);
+                cf[0] = sin(i*blue_color/100)*255;
             }
         }
         if(x > frame.size().width) break;

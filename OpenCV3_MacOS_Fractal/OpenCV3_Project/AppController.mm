@@ -36,6 +36,11 @@ using namespace frac;
     radius = [slide3 integerValue];
     zoom = atof([[field stringValue] UTF8String]);
     max_iter = atoi([[iter stringValue] UTF8String]);
+    
+    red_color = [rf floatValue];
+    green_color = [gf floatValue];
+    blue_color = [bf floatValue];
+    
     frac::DrawFractal(img);
     cv::imshow("image", img);
 }
