@@ -48,29 +48,26 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
     std::complex<double> C ((double)paramA, (double)+paramB);
     std::complex<double> Z;
     int i = 0;
-    bool finished;
     for (int x=0; x < width;++x)
     {
         for (int y=0; y < height; ++y)
         {
+            //C=std::complex<double>((double)(x*(x2-x1)/width+x1), (double)(y*(y2-y1)/height+y1));
             Z=std::complex<double>((double)(x*(x2-x1)/width+x1), (double)(y*(y2-y1)/height+y1));
-            finished=false;
-            //C=std::complex<double>(x,y);
-            for (i=0; i<max_iter && !finished; i++)
+            //Z=std::complex<double>(0, 0);
+            for (i = 0; i < max_iter && std::abs(Z) < 2; i++)
             {
                 Z=Z*Z+C;
-                //Zt=Z-Z0;
-                if(std::abs(Z) > 4) finished = true;
             }
             cv::Vec3b &cf = frame.at<cv::Vec3b>(y, x);
-            if(finished) {
-                cf[0] = sin(i*red_color/100)*255-color_r;
-                cf[1] = sin(i*green_color/100)*200-color_g;
-                cf[2] = (255-i*2-color_base);
-            } else {
+            if(i == max_iter) {
                 cf[0] = 0;
                 cf[1] = 0;
                 cf[2] = 0;
+            } else {
+                cf[0] = sin(i*red_color/100)*255;
+                cf[1] = sin(i*green_color/100)*200-color_g;
+                cf[2] = (255-i*2-color_base);
             }
         }
         if(x > frame.size().width) break;
