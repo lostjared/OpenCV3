@@ -19,7 +19,6 @@
                 <outlet property="iter" destination="zCk-ip-P6F" id="F6O-Ex-acz"/>
                 <outlet property="slide1" destination="CM3-r1-jRL" id="Qha-oL-Cwz"/>
                 <outlet property="slide2" destination="j4v-gY-NOi" id="Gsh-IT-Uel"/>
-                <outlet property="slide3" destination="cyc-zT-vFV" id="S2M-Ue-ruO"/>
             </connections>
         </customObject>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
@@ -692,14 +691,14 @@
         <window title="OpenCV3_Project" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="390" height="149"/>
+            <rect key="contentRect" x="335" y="390" width="390" height="135"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="390" height="149"/>
+                <rect key="frame" x="0.0" y="0.0" width="390" height="135"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oI7-Hg-OjW">
-                        <rect key="frame" x="14" y="112" width="102" height="32"/>
+                        <rect key="frame" x="14" y="98" width="102" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Draw" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BZZ-1N-ok5">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -710,22 +709,23 @@
                         </connections>
                     </button>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CM3-r1-jRL">
-                        <rect key="frame" x="16" y="82" width="129" height="19"/>
+                        <rect key="frame" x="16" y="68" width="129" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="100" tickMarkPosition="above" sliderType="linear" id="iSD-sp-aq1"/>
+                        <connections>
+                            <action selector="openImage:" target="iyM-bF-bIa" id="Zgq-Pd-gyM"/>
+                        </connections>
                     </slider>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4v-gY-NOi">
-                        <rect key="frame" x="18" y="49" width="127" height="19"/>
+                        <rect key="frame" x="18" y="35" width="127" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" alignment="left" maxValue="100" tickMarkPosition="above" sliderType="linear" id="dwL-KI-6Ph"/>
-                    </slider>
-                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyc-zT-vFV">
-                        <rect key="frame" x="18" y="18" width="129" height="19"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" state="on" alignment="left" maxValue="360" tickMarkPosition="above" sliderType="linear" id="xwT-xc-ZDM"/>
+                        <connections>
+                            <action selector="openImage:" target="iyM-bF-bIa" id="vi5-r8-x5h"/>
+                        </connections>
                     </slider>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-Ld-dWb">
-                        <rect key="frame" x="274" y="119" width="96" height="22"/>
+                        <rect key="frame" x="274" y="105" width="96" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="0.5" drawsBackground="YES" id="h0F-Mq-6oz">
                             <font key="font" metaFont="system"/>
@@ -734,7 +734,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLr-fs-mds">
-                        <rect key="frame" x="229" y="119" width="39" height="17"/>
+                        <rect key="frame" x="229" y="105" width="39" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Zoom" id="e8g-a4-YJq">
                             <font key="font" metaFont="system"/>
@@ -743,7 +743,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCk-ip-P6F">
-                        <rect key="frame" x="274" y="87" width="96" height="22"/>
+                        <rect key="frame" x="274" y="73" width="96" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="100" drawsBackground="YES" id="KHh-ZD-nHG">
                             <font key="font" metaFont="system"/>
@@ -752,7 +752,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrc-m2-VFf">
-                        <rect key="frame" x="231" y="90" width="30" height="17"/>
+                        <rect key="frame" x="231" y="76" width="30" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Max" id="Vbf-Um-kfo">
                             <font key="font" metaFont="system"/>
@@ -762,7 +762,7 @@
                     </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="123" y="-252"/>
+            <point key="canvasLocation" x="123" y="-259.5"/>
         </window>
         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="IRK-HK-gpR">
             <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
