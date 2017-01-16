@@ -16,9 +16,12 @@
         <customObject id="iyM-bF-bIa" customClass="AppController">
             <connections>
                 <outlet property="field" destination="OG8-Ld-dWb" id="U3a-gG-6Dk"/>
+                <outlet property="field_cnt" destination="2F5-sS-589" id="yXt-vM-Flz"/>
                 <outlet property="iter" destination="zCk-ip-P6F" id="F6O-Ex-acz"/>
+                <outlet property="iter_nt" destination="Stq-SE-cDB" id="qqq-W9-pQL"/>
                 <outlet property="slide1" destination="CM3-r1-jRL" id="Qha-oL-Cwz"/>
                 <outlet property="slide2" destination="j4v-gY-NOi" id="Gsh-IT-Uel"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="ZpV-Yd-8sN"/>
             </connections>
         </customObject>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
@@ -688,8 +691,8 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="OpenCV3_Project" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="Fractal Demo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="390" height="135"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
@@ -755,6 +758,24 @@
                         <rect key="frame" x="231" y="76" width="30" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Max" id="Vbf-Um-kfo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-sS-589">
+                        <rect key="frame" x="151" y="70" width="76" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0" id="jnM-2d-8EQ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stq-SE-cDB">
+                        <rect key="frame" x="151" y="37" width="76" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0" id="oiA-cE-HQ3">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
