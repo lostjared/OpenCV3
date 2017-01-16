@@ -18,6 +18,7 @@ namespace frac {
     double color_base = 0.0;
     float radius = 180.0f;
     int dir = 1;
+    unsigned int max_iter = 100;
     
 }
 
@@ -45,26 +46,33 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
     float y2=mod_y+1.0f*zoom;
     int Width=frame.cols, Height=frame.rows;
     std::complex<double> C ((double)paramA, (double)+paramB);
-    std::complex<double> Z, Z0, Zt;
+    std::complex<double> Z;
     int i = 0;
     bool Finished;
     for (int x=0; x<Width;++x)
     {
         for (int y=0; y<Height; ++y)
         {
-            Z=Z0=std::complex<double>((double)(x*(x2-x1)/Width+x1), (double)(y*(y2-y1)/Height+y1));
+            Z=std::complex<double>((double)(x*(x2-x1)/Width+x1), (double)(y*(y2-y1)/Height+y1));
             Finished=false;
-            for (i=0; i<100 && !Finished; i++)
+            //C=std::complex<double>(x,y);
+            for (i=0; i<max_iter && !Finished; i++)
             {
                 Z=Z*Z+C;
-                Zt=Z-Z0;
-                if( (sqrt(Zt.real()*Zt.real()+Zt.imag()*Zt.imag())) > radius) Finished = true;
+                //Zt=Z-Z0;
+                if(std::abs(Z) > 4) Finished = true;
             }
             
             cv::Vec3b &cf = frame.at<cv::Vec3b>(y, x);
-            cf[0] = sin(i*red_color/100)*255-color_r;
-            cf[1] = sin(i*green_color/100)*200-color_g;
-            cf[2] = (255-i*2-color_base);
+            if(Finished) {
+                cf[0] = sin(i*red_color/100)*255-color_r;
+                cf[1] = sin(i*green_color/100)*200-color_g;
+                cf[2] = (255-i*2-color_base);
+            } else {
+                cf[0] = 0;
+                cf[1] = 0;
+                cf[2] = 0;
+            }
         }
         if(x > frame.size().width) break;
     }

@@ -23,6 +23,8 @@ using namespace frac;
     paramA = -([slide1 integerValue] * 0.01);
     paramB = [slide2 integerValue] * 0.01;
     radius = [slide3 integerValue];
+    zoom = atof([[field stringValue] UTF8String]);
+    max_iter = atoi([[iter stringValue] UTF8String]);
     frac::DrawFractal(img);
     cv::imshow("image", img);
     }
