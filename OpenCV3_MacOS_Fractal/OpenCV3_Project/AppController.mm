@@ -19,7 +19,7 @@ using namespace frac;
 }
 
 - (IBAction) openImage: (id) sender {
-    cv::Mat img(640,480, CV_8UC3);
+    cv::Mat img(480,640, CV_8UC3);
     paramA = -([slide1 integerValue] * 0.01);
     paramB = [slide2 integerValue] * 0.01;
     radius = [slide3 integerValue];

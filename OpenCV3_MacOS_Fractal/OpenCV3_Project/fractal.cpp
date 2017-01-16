@@ -76,8 +76,6 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
         }
         if(x > frame.size().width) break;
     }
-    
     std::cout << i << ": paramA: " << paramA << " paramB: " << paramB << ": " << radius << "\n";
-    
 }
 
