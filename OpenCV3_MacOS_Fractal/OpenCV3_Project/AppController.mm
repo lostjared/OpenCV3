@@ -18,6 +18,7 @@ using namespace frac;
     cv::namedWindow("image", 1);
     [window setLevel: NSStatusWindowLevel];
     frame = cv::Mat(600, 800, CV_8UC3);
+    [self openImage: self];
 }
 
 - (IBAction) openImage: (id) sender {
@@ -39,6 +40,22 @@ using namespace frac;
     blue_color = [bf floatValue];
     frac::DrawFractal(frame);
     cv::imshow("image", frame);
+}
+
+- (IBAction) saveImage: (id) sender {
+    
+    if(frame.empty()) return;
+    
+    NSSavePanel *panel = [NSSavePanel savePanel];
+    [panel setAllowedFileTypes: [NSArray arrayWithObjects: @"png", @"jpg", nil]];
+    [panel setCanCreateDirectories: YES];
+    [panel setExtensionHidden: YES];
+    
+    if([panel runModal]) {
+        NSString *s = [[panel URL] path];
+        cv::imwrite([s UTF8String], frame);
+    }
+    
 }
 
 @end

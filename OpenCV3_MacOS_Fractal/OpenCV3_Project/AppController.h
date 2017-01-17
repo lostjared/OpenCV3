@@ -24,6 +24,7 @@
 }
 
 - (IBAction) openImage: (id) sender;
+- (IBAction) saveImage: (id) sender;
 
 
 @end
