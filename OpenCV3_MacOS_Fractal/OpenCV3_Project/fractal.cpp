@@ -49,9 +49,9 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
     std::complex<double> C (paramA, paramB);
     std::complex<double> Z;
     int i = 0;
-    for (int x=0; x < width;++x)
+    for (int x = 0; x < width; ++x)
     {
-        for (int y=0; y < height; ++y)
+        for (int y = 0; y < height; ++y)
         {
             //C=std::complex<double>((double)(x*(x2-x1)/width+x1), (double)(y*(y2-y1)/height+y1));
             Z=std::complex<double>((double)(x*(x2-x1)/width+x1), (double)(y*(y2-y1)/height+y1));
