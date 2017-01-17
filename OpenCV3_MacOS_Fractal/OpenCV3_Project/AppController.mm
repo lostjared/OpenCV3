@@ -17,7 +17,7 @@ using namespace frac;
 - (void) awakeFromNib {
     cv::namedWindow("image", 1);
     [window setLevel: NSStatusWindowLevel];
-    frame = cv::Mat(600, 800, CV_8UC3);
+    frame = cv::Mat(720, 1280, CV_8UC3);
     [self openImage: self];
 }
 
@@ -33,8 +33,11 @@ using namespace frac;
     
     [field_cnt setFloatValue: paramA];
     [iter_nt setFloatValue: paramB];
-    zoom = atof([[field stringValue] UTF8String]);
-    max_iter = atoi([[iter stringValue] UTF8String]);
+    zoom_x = [field floatValue];
+    zoom_y = [field_zoom_y floatValue];
+    zoom_w = [field_zoom_w floatValue];
+    zoom_h = [field_zoom_h floatValue];
+    max_iter = [iter integerValue];
     red_color = [rf floatValue];
     green_color = [gf floatValue];
     blue_color = [bf floatValue];

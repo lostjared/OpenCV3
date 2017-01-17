@@ -14,8 +14,8 @@ namespace frac {
     
     extern double paramA,paramB;
     extern float radius;
-    extern float zoom;
-    extern unsigned int max_iter;
+    extern float zoom_x, zoom_y, zoom_w, zoom_h;
+    extern long max_iter;
     extern double red_color, green_color, blue_color;
 	void FractalLogic();
 	void DrawFractal(cv::Mat &frame, bool neg=false);

@@ -16,7 +16,7 @@
 @interface AppController : NSObject {
     
     IBOutlet NSSlider *slide1, *slide2, *slide3;
-    IBOutlet NSTextField *field, *iter, *field_cnt, *iter_nt, *rf, *gf, *bf;
+    IBOutlet NSTextField *field, *iter, *field_cnt, *iter_nt, *rf, *gf, *bf, *field_zoom_y, *field_zoom_w, *field_zoom_h;
     IBOutlet NSWindow *window;
     IBOutlet NSButton *chk1, *chk2;
     

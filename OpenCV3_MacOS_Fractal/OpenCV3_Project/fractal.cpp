@@ -8,7 +8,7 @@
 namespace frac {
     double paramA = 1.0;//0.519;
     double paramB = 0.688;
-    float zoom = 0.5;
+    float zoom_x = 0.5, zoom_y = 0.5, zoom_w = 0.5, zoom_h = 0.5;
     double red_color = 3.3;
     double green_color = 3.3;
     double blue_color = 2.4;
@@ -19,7 +19,7 @@ namespace frac {
     double color_base = 0.0;
     float radius = 180.0f;
     int dir = 1;
-    unsigned int max_iter = 100;
+    long max_iter = 100;
 }
 
 void frac::FractalLogic() {
@@ -39,10 +39,12 @@ void frac::FractalLogic() {
 
 void frac::DrawFractal(cv::Mat &frame, bool neg)
 {
-    float x1=mod_x-1.0f*zoom;
-    float x2=mod_x+1.0f*zoom;
-    float y1=mod_y-1.0f*zoom;
-    float y2=mod_y+1.0f*zoom;
+    float x1=mod_x-1.0f*zoom_x;
+    float x2=mod_x+1.0f*zoom_w;
+    float y1=mod_y-1.0f*zoom_y;
+    float y2=mod_y+1.0f*zoom_h;
+    
+    
     int width=frame.cols, height=frame.rows;
     std::complex<double> C (paramA, paramB);
     std::complex<double> Z;
