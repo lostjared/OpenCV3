@@ -13,7 +13,6 @@
 		7F5832021E27F5C900101A98 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5832001E27F5C900101A98 /* MainMenu.xib */; };
 		7F58320D1E27F5C900101A98 /* OpenCV3_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F58320C1E27F5C900101A98 /* OpenCV3_ProjectTests.m */; };
 		7F5832181E27F5C900101A98 /* OpenCV3_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5832171E27F5C900101A98 /* OpenCV3_ProjectUITests.m */; };
-		7F5832291E27F66400101A98 /* cvlibs in Resources */ = {isa = PBXBuildFile; fileRef = 7F5832281E27F66400101A98 /* cvlibs */; };
 		7F58322C1E27F6B400101A98 /* CVTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F58322A1E27F6B400101A98 /* CVTest.mm */; };
 		7F58322E1E27F98400101A98 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58322D1E27F98400101A98 /* OpenCL.framework */; };
 		7F58323E1E27FAA700101A98 /* libclapack.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F58323D1E27FAA700101A98 /* libclapack.tbd */; };
@@ -80,7 +79,6 @@
 		7F5832171E27F5C900101A98 /* OpenCV3_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCV3_ProjectUITests.m; sourceTree = "<group>"; };
 		7F5832191E27F5C900101A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F5832261E27F65900101A98 /* libopencv_world.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_world.a; path = cvlibs/libopencv_world.a; sourceTree = "<group>"; };
-		7F5832281E27F66400101A98 /* cvlibs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cvlibs; sourceTree = "<group>"; };
 		7F58322A1E27F6B400101A98 /* CVTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVTest.mm; sourceTree = "<group>"; };
 		7F58322B1E27F6B400101A98 /* CVTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTest.h; sourceTree = "<group>"; };
 		7F58322D1E27F98400101A98 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
@@ -174,7 +172,6 @@
 		7F5831EC1E27F5C800101A98 = {
 			isa = PBXGroup;
 			children = (
-				7F5832281E27F66400101A98 /* cvlibs */,
 				7F5831F71E27F5C900101A98 /* OpenCV3_Project */,
 				7F58320B1E27F5C900101A98 /* OpenCV3_ProjectTests */,
 				7F5832161E27F5C900101A98 /* OpenCV3_ProjectUITests */,
@@ -379,7 +376,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5832291E27F66400101A98 /* cvlibs in Resources */,
 				7F5831FF1E27F5C900101A98 /* Assets.xcassets in Resources */,
 				7F5832021E27F5C900101A98 /* MainMenu.xib in Resources */,
 			);
