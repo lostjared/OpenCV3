@@ -46,7 +46,7 @@ void frac::DrawFractal(cv::Mat &frame, bool neg)
     float y1=mod_y-1.0f*zoom;
     float y2=mod_y+1.0f*zoom;
     int width=frame.cols, height=frame.rows;
-    std::complex<double> C ((double)paramA, (double)+paramB);
+    std::complex<double> C (paramA, paramB);
     std::complex<double> Z;
     int i = 0;
     for (int x=0; x < width;++x)
