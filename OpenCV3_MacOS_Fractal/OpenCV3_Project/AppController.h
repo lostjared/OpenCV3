@@ -20,6 +20,7 @@
     IBOutlet NSWindow *window;
     IBOutlet NSButton *chk1, *chk2;
     
+    cv::Mat frame;
 }
 
 - (IBAction) openImage: (id) sender;

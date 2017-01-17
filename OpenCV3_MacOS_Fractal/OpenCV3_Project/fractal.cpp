@@ -20,7 +20,6 @@ namespace frac {
     float radius = 180.0f;
     int dir = 1;
     unsigned int max_iter = 100;
-    
 }
 
 void frac::FractalLogic() {
@@ -37,7 +36,6 @@ void frac::FractalLogic() {
         if(paramA >= 1.0f) dir = 1;
     }
 }
-
 
 void frac::DrawFractal(cv::Mat &frame, bool neg)
 {
